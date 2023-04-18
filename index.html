@@ -14,35 +14,43 @@
 
     <form action="">
         <label for="first-name" >First Name</label>
-        <input type="text" id="firstname" name="First Name" placeholder="Enter Your First Name"> <br>
+        <input type="text" id="firstname" name="First Name" placeholder="Enter Your First Name" required> <br>
         <label for="last-name" >Last Name</label>
-        <input type="text"  name="Last Name" placeholder="Enter Your Last Name">  <br>
+        <input type="text"  id="lastname" name="Last Name" placeholder="Enter Your Last Name" required>  <br>
         <label for="email" >Email</label>
-        <input type="email"  name="Email" placeholder="Enter Your Email Address"> <br>
+        <input type="email" id="email" name="Email" placeholder="Enter Your Email Address" required> <br>
         <label for="password" >Password</label>
-        <input type="password"  name="Password" placeholder="Enter Your Password"> <br>
+        <input type="password" id="password" name="Password" placeholder="Enter Your Password" required> <br>
         
         <label for="gender">Gender:</label>
-        <select name="gender" id="">
+        <select name="gender" id="gender">
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="rather not say">Rather not say</option>
         </select> <br>
 
         <label for="favourite-food">Favourite Foods</label>
-        <select name="favourite food" id="">
+        <select name="favourite food" id="food">
             <option value="beans">Beans</option>
             <option value="rice">Rice</option>
             <option value="spaghetti">Spaghetti</option>
             <option value="soup">Soup</option>
             <option value="pizza">Pizza</option>
         </select><br>
+        <p>
+            <label for="certificate">Certificate</label>
+            <select name="certificate" id="certificate">
+                <option value="fslc">FSLC</option>
+                <option value="olevel">O'Level</option>
+                <option value="bsc">BSC</option>
+            </select>
+        </p>
 
         <label for="phone-number">Phone Number</label>
-        <input type="tel" name="Phone Number" placeholder="Enter Your Phone Number"> <br>
+        <input type="tel" name="phone" id="phone" placeholder="+234"> <br>
 
         <label for="tell-us-about-yourself">Tell Us About Yourself:</label>
-        <textarea name="about me" id="" cols="50" rows="4"></textarea> <br>
+        <textarea name="about me" id="" cols="50" rows="10" placeholder="I am a ...." required></textarea> <br>
 
         <input type="submit" value="Submit">
 
